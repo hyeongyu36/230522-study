@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>세로로 중앙에 배치하기</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
+      .wrap {
+        background: url("images/1.jpg") no-repeat left top fixed;
+        background-size: cover;
+        /* 현재 보이는 화면의 높이 */
+        /* 현재 보이는 높이가 800px 1vh=8px */
+        min-height: 100vh;
+        /* 현재 보이는 화면의 너비 */
+        min-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .img {
+        flex-flow: row wrap;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Welcome!</h1>
+      <div class="img">
+        <img src="images/ww.jpg" alt="행성" />
+        <img src="images/ww2.jpg" alt="행성" />
+        <img src="images/ww3.jpg" alt="행성" />
+      </div>
+      <span>100vh and 100vw 를 응용한 문제입니다.</span>
+    </div>
+  </body>
+</html>

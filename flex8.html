@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>세로로 중앙에 배치하기</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrap {
+        background: url("images/1.jpg") no-repeat left top fixed;
+        background-size: cover;
+        /* 현재 보이는 화면의 높이 */
+        /* 현재 보이는 높이가 800px 1vh=8px */
+        min-height: 100vh;
+        /* 현재 보이는 화면의 너비 */
+        min-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        width: 70px;
+        height: 50px;
+        border-radius: 5px;
+        /* align-self: center;
+            justify-content: center; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <button>클릭!</button>
+    </div>
+  </body>
+</html>
